@@ -68,7 +68,7 @@ header p {
     cursor: pointer;
 }
 
-.a, .b {
+.a {
     position: relative;
     display: flex;
     flex-shrink: 0;
@@ -90,3 +90,18 @@ header p {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 } 
+
+.popup{
+    width: 50%;
+    justify-items: center;
+    align-items: center;
+    display: none;
+    z-index: 1;
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+.hidden{
+    display: none;
+}

@@ -14,4 +14,23 @@ window.addEventListener('load', function () {
     }
 
     animateSlider('#one', 'left');   
+
+    const container = document.querySelector('.a'); 
+    const popupElement = document.querySelector('.popup');
+    const popupimg = document.querySelector('.popup-img');
+
+    container.addEventListener('click',(event) => {
+        if (event.target.tagName === 'IMG') {
+            const imageID = event.target.id;
+
+            console.log('Clicked Image ID:', imageID);
+            popupElement.style.display = "block";
+            popupimg.src = event.target.src;
+
+
+            
+        }
+    })
+
+    
 });
