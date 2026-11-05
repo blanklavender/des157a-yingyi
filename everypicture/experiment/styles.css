@@ -68,7 +68,7 @@ header p {
     cursor: pointer;
 }
 
-.a {
+.a, .b{
     position: relative;
     display: flex;
     flex-shrink: 0;
